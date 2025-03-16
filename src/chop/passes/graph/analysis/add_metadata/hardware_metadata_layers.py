@@ -69,6 +69,26 @@ INTERNAL_COMP = {
             ],
         },
     ],
+    "pool2d": [
+        {
+            "name": "pool2d",
+            "dependence_files": [
+                "pooling_layers/rtl/maxpool1d.sv",
+            ],
+        },
+    ],
+    "conv1d": [
+        {
+            "name": "fixed_conv1d",
+            "dependence_files": [
+                "convolution_layers/rtl/convolution.sv",
+                "convolution_layers/rtl/convolution_arith.sv",
+                "convolution_layers/rtl/padding.sv",
+                "convolution_layers/rtl/roller.sv",
+                "convolution_layers/rtl/sliding_window.sv",
+            ],
+        },
+    ],
     "hardshrink": [
         {
             "name": "fixed_hardshrink",

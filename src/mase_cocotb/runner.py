@@ -159,6 +159,7 @@ def mase_runner(
         # Get file which called this function
         # Should be of form components/<group>/test/<module>_tb.py
         test_filepath = inspect.stack()[1].filename
+        print(test_filepath)
         matches = re.search(
             r"mase_components/([\w/]+)/test/(\w+)_tb\.py", test_filepath
         )
@@ -166,6 +167,7 @@ def mase_runner(
             matches != None
         ), "Did not find file that matches <module>_tb.py in the test folder!"
         group, module = matches.groups()
+        print(group, module)
 
     # Group path is components/<group>
     group_path = Path(test_filepath).parent.parent

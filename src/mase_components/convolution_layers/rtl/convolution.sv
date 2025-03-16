@@ -8,25 +8,25 @@ module convolution #(
     parameter BIAS_PRECISION_0      = 8,
     parameter BIAS_PRECISION_1      = 4,
 
-    parameter IN_X    = 3,
-    parameter IN_Y   = 2,
-    parameter IN_C = 4,
-    parameter UNROLL_IN_C = 2,
+    parameter IN_X    = 28,
+    parameter IN_Y   = 28,
+    parameter IN_C = 1,
+    parameter UNROLL_IN_C = 1,
 
-    parameter KERNEL_X = 2,
-    parameter KERNEL_Y = 2,
-    parameter OUT_C = 4,
+    parameter KERNEL_X = 3,
+    parameter KERNEL_Y = 3,
+    parameter OUT_C = 1,
 
-    parameter UNROLL_KERNEL_OUT = 4,
-    parameter UNROLL_OUT_C = 2,
+    parameter UNROLL_KERNEL_OUT = 1,
+    parameter UNROLL_OUT_C = 1,
 
-    parameter SLIDING_NUM = 8,
+    parameter SLIDING_NUM = 9,
 
     parameter BIAS_SIZE = UNROLL_OUT_C,
     parameter STRIDE    = 1,
 
     parameter PADDING_Y = 1,
-    parameter PADDING_X = 2,
+    parameter PADDING_X = 1,
     parameter HAS_BIAS  = 1,
 
     parameter DATA_OUT_0_PRECISION_0 = 8,

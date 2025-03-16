@@ -9,6 +9,16 @@ Entry format:
 
 MASE_HW_DEPS = {
     # Activations
+    "../../../pooling_layers/adaptiveavgpool1d": [],
+    "pooling_layers/adaptiveavgpool1d": [],
+    "../../../pooling_layers/adaptivemaxpool1d": [],
+    "pooling_layers/adaptivemaxpool1d": [],
+    "../../../pooling_layers/maxpool1d": [],
+    "pooling_layers/maxpool1d": [],
+    "../../../pooling_layers/lppool1d": [],
+    "pooling_layers/lppool1d": [],
+    "../../../pooling_layers/avgpool1d": [],
+    "pooling_layers/avgpool1d": [],
     "activation_layers/fixed_relu": [],
     "activation_layers/fixed_leaky_relu": [],
     "activation_layers/fixed_tanh": ["cast"],
@@ -87,8 +97,8 @@ MASE_HW_DEPS = {
         "common",
         "fixed_arithmetic",
     ],
-    "conv/sliding_window": ["cast", "conv", "linear", "common", "fixed_arithmetic"],
-    "conv/padding": ["cast", "conv", "linear", "common", "fixed_arithmetic"],
+    "convolution_layers/sliding_window": ["cast", "convolution_layers", "linear", "common", "fixed_arithmetic", "memory"],
+    "convolution_layers/padding": ["cast", "convolution_layers", "linear", "common", "fixed_arithmetic", "memory"],
     # Language models llmint8
     "language_models/llmint8/find_max": [
         "language_models/llmint8",

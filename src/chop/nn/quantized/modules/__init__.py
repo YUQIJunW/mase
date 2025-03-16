@@ -23,6 +23,7 @@ from .conv1d import (
     Conv1dBinary,
     Conv1dTernary,
 )
+
 from .conv2d import (
     Conv2dBinaryResidualSign,
     Conv2dBinaryScaling,
@@ -162,7 +163,9 @@ from .gqa import (
 )
 
 quantized_basic_module_map = {
+
     "conv1d_block_minifloat": Conv1dBlockMinifloat,
+    "conv1d_fixed": Conv1dInteger,
     "conv1d_integer": Conv1dInteger,
     "conv1d_binary": Conv1dBinary,
     "conv1d_ternary": Conv1dTernary,
@@ -173,6 +176,7 @@ quantized_basic_module_map = {
     "conv1d_block_fp": Conv1dBlockFP,
     "conv2d_block_minifloat": Conv2dBlockMinifloat,
     "conv2d_integer": Conv2dInteger,
+    "conv2d_fixed": Conv2dInteger,
     "conv2d_binary_residual": Conv2dBinaryResidualSign,
     "conv2d_binary": Conv2dBinaryScaling,
     "conv2d_ternary": Conv2dTernary,
