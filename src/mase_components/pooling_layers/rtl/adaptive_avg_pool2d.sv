@@ -6,8 +6,10 @@ module adaptive_avg_pool2d #(
     parameter DATA_IN_0_PRECISION_1 = 3,
     parameter DATA_IN_0_TENSOR_SIZE_DIM_0 = 8,
     parameter DATA_IN_0_TENSOR_SIZE_DIM_1 = 1,
+    parameter DATA_IN_0_TENSOR_SIZE_DIM_2 = 1,
     parameter DATA_IN_0_PARALLELISM_DIM_0 = 1,
     parameter DATA_IN_0_PARALLELISM_DIM_1 = 1,
+    parameter DATA_IN_0_PARALLELISM_DIM_2 = 1,
 
     parameter DATA_IN_0_WIDTH = 8,
     parameter DATA_IN_0_HEIGHT = 8,
@@ -22,8 +24,10 @@ module adaptive_avg_pool2d #(
     parameter DATA_OUT_0_PRECISION_1 = 3,
     parameter DATA_OUT_0_TENSOR_SIZE_DIM_0 = 8,
     parameter DATA_OUT_0_TENSOR_SIZE_DIM_1 = 1,
+    parameter DATA_OUT_0_TENSOR_SIZE_DIM_2 = 1,
     parameter DATA_OUT_0_PARALLELISM_DIM_0 = 1,
     parameter DATA_OUT_0_PARALLELISM_DIM_1 = 1,
+    parameter DATA_OUT_0_PARALLELISM_DIM_2 = 1,
 
     parameter INPLACE = 0
 ) (

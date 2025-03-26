@@ -109,6 +109,46 @@ INTERNAL_COMP = {
             ],
         },
     ],
+    "max_pool2d": [
+        {
+            "name": "max_pool2d",
+            "dependence_files": [
+                "pooling_layers/rtl/max_pool2d.sv",
+            ],
+        },
+    ],
+    "avg_pool2d": [
+        {
+            "name": "avg_pool2d",
+            "dependence_files": [
+                "pooling_layers/rtl/avg_pool2d.sv",
+            ],
+        },
+    ],
+    "lp_pool2d": [
+        {
+            "name": "lp_pool2d",
+            "dependence_files": [
+                "pooling_layers/rtl/lp_pool2d.sv",
+            ],
+        },
+    ],
+    "adaptive_avg_pool2d": [
+        {
+            "name": "adaptive_avg_pool2d",
+            "dependence_files": [
+                "pooling_layers/rtl/adaptive_avg_pool2d.sv",
+            ],
+        },
+    ],
+    "adaptive_max_pool2d": [
+        {
+            "name": "adaptive_max_pool2d",
+            "dependence_files": [
+                "pooling_layers/rtl/adaptive_max_pool2d.sv",
+            ],
+        },
+    ],
     "conv1d": [
         {
             "name": "fixed_conv1d",
