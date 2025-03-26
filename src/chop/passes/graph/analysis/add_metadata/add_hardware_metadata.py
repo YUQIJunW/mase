@@ -36,6 +36,7 @@ def add_component_source(node):
     node.meta["mase"]["hardware"]["interface"] = {}
 
     mase_op = node.meta["mase"]["common"]["mase_op"]
+    print(mase_op)
     if mase_op == "user_defined_module":
         for custom_op, op_info in node.meta["mase"].model.custom_ops["modules"].items():
             if isinstance(

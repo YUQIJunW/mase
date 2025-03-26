@@ -78,6 +78,7 @@ FUNCTIONAL_ENTRY_MAP = {
     "layer_norm": {"data_in_1": "weight", "data_in_2": "bias"},
     "linear": {"data_in_1": "weight", "data_in_2": "bias"},
     "max_pool1d": None,
+    "lp_pool1d": None,
     "max_pool2d": None,
     "relu": None,
 }

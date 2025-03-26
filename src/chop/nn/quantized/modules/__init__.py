@@ -12,6 +12,9 @@ from .roberta import (
 from .llama import LlamaAttentionLSQInteger
 
 # from .add import AddInteger
+from .maxpool1d import (
+    MaxPool1dInteger,
+)
 from .conv1d import (
     Conv1dBlockFP,
     Conv1dBlockMinifloat,

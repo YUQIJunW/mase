@@ -61,6 +61,7 @@ MASE_MODULE_RELATED_FUNCS = [
     "adaptive_max_pool1d",
     "adaptive_max_pool2d",
     "avg_pool1d",
+    "max_pool1d",
     "avg_pool2d",
     "batch_norm",
     "conv1d",

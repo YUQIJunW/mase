@@ -314,6 +314,7 @@ module_data = {
     "avg_pool2d": {"input": "data_in"},
     "max_pool1d": {"input": "data_in"},
     "max_pool2d": {"input": "data_in"},
+    "lp_pool1d": {"input": "data_in"},
     # https://pytorch.org/docs/stable/generated/torch.nn.BatchNorm1d.html#torch.nn.BatchNorm1d
     "batch_norm1d": {"input": "data_in"},
     # https://pytorch.org/docs/stable/generated/torch.nn.BatchNorm2d.html#torch.nn.BatchNorm1d

@@ -54,6 +54,8 @@ def graph_iterator_for_mase_ops(graph):
                 mase_op = "max_pool1d"
             elif isinstance(module, nn.MaxPool2d):
                 mase_op = "max_pool2d"
+            elif isinstance(module, nn.LPPool1d):
+                mase_op = "lp_pool1d"
             elif isinstance(module, nn.BatchNorm1d):
                 mase_type = "module"
                 mase_op = "batch_norm1d"
